@@ -23,9 +23,12 @@ void simulation(int&n,double&a,double &p,int **seq){
 	//double nonParaResult;
 	std::cout<<"\nWe will now approximate the solution through repeated "
 	         <<"simulations. \nHow many simulations would you like? ";
-	int simulationTimes=0;
+
+  int simulationTimes=0;
+
   // ask user for te simulations input
 	std::cin >> simulationTimes;
+
 	while(simulationTimes<=0){
 		std::cout <<"Please re-enter the number of simulations."
 							<<"It must be a positive integer.\n";
@@ -40,6 +43,7 @@ void simulation(int&n,double&a,double &p,int **seq){
   // Non-Parallel Method
 	std::cout<<"\n1) The simulations will first be produced through a "
 					 <<"non-parallel method.\n";
+
   tm.start();
   for(int i=0;i<simulationTimes;++i){
     result=countLen(*seq,p*100,n);
@@ -47,6 +51,7 @@ void simulation(int&n,double&a,double &p,int **seq){
 		t[i]=total/(i+1);
   }
 	tm.end();
+
   //result of Non-Parallel Method
 	std::cout<<"\tExpected number of coin tosses: ";
 	std::cout<<fixed<<setprecision(6)<<total/simulationTimes<<endl;
