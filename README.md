@@ -1,4 +1,4 @@
-# MTH-4300-Algorithms-Computers-and-Programming-Final-Project
+# Expected Values of Coin Flipping
 Let 𝑝∈(0,1) be a real number. An unfair coin has probability 𝑝 of landing heads and probability 1−𝑝 for landing tails. 
 Let 𝑛∈ℕ and let 𝑠→=(𝑠1, 𝑠2, …, 𝑠𝑛)∈{𝐻,𝑇}𝑛 be a sequence of heads and tails of length 𝑛. 
 Let 𝐸𝑠→ be the expected number of coin tosses until the first occurrence of the sequence 𝑠→.  
